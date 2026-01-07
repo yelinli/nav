@@ -11,8 +11,8 @@
     "start:reload": "npm run init && ng serve --host 0.0.0.0 --port=7002",
     "init": "tsx ./scripts/start.ts",
     "setup": "npm run init && tsx ./scripts/build.ts",
-    "build-gh-pages": "npm run setup && ng build --base-href ./ --index src/index.html",
-    "build": "npm run setup && ng build --index src/index.html",
+    "build-gh-pages": "npm run setup && npx ng build --base-href ./ --index src/index.html",
+    "build": "npm run setup && npx ng build --index src/index.html",
     "watch": "ng build --watch --configuration development",
     "update": "git pull && (git remote add upstream https://gitee.com/xiejiahe/nav.git || true) && git fetch upstream main && git merge upstream/main --allow-unrelated-histories --no-edit && git push",
     "pull": "git pull"
