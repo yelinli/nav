@@ -19,6 +19,5 @@
       "source": "/:path*",
       "destination": "/index.html"
     }
-  ],
-  "outputDirectory": "dist/browser"
+  ]
 }
